@@ -1,2 +1,75 @@
 @import url(vendor/normalize.css);
 @import url(fonts/fonts.css);
+
+@keyframes rotation {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
+.page {
+    background-color: #000;
+}
+
+.content {
+    max-width: 1440px;
+      margin: auto;
+  font-family: 'Inter', Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.logo_type_margin {
+    margin: 20px;
+}
+
+.logo__title {
+    color: #000;
+    display: block;
+      font-weight: 900;
+  font-size: 30px;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+.presentation__title {
+    max-width: 350px;
+        color: #fff;
+      font-weight: 900;
+  font-size: 50px;
+  line-height: 1;
+  margin: 0;
+  padding: 30px 0 0 20px;
+}
+
+.presentation__square-pic {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    right: -50px;
+}
+
+
+
