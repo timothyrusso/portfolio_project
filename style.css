@@ -47,7 +47,7 @@
 }
 
 .logo_type_margin {
-  margin: 64px;
+  margin: 20px 64px 64px;
 }
 
 .logo__title {
@@ -61,12 +61,25 @@
 }
 
 .header__title {
-  color: #fff;
   font-weight: 900;
   font-size: 55px;
   line-height: 1;
   margin: 0;
   padding: 30px 0 0 64px;
+  background-image: -webkit-linear-gradient(20deg, rgb(22, 188, 210), rgb(219, 233, 17));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+}
+
+.header__paragraph {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 70px 0 0 64px;
+  max-width: 700px;
 }
 
 .header__square-pic {
@@ -120,15 +133,33 @@
   height: 100%;
   max-height: 456px;
   object-fit: cover;
-  transition: all 0.4s linear;
+  transition: all 0.5s linear;
 }
 
-.projects__image-items:hover {
-  opacity: 0.6;
+.projects__image-items-header {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  display: none;
+}
+
+.projects__image-items:hover{
   transform: scale(1.25);
+  opacity: 0.6;
+  display: block;
 }
 
 .projects__item {
   max-height: 456px;
   overflow: hidden;
+  position: relative;
+}
+
+.projects__item:hover .projects__image-items-header {
+  display: block;
 }
