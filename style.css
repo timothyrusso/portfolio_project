@@ -162,7 +162,6 @@
 
 .projects__image-items:hover {
   transform: scale(1.1);
-  opacity: 0.8;
   display: block;
 }
 
@@ -215,7 +214,9 @@
   width: 450px;
   height: 450px;
   border-radius: 50%;
-  background-color: #fff;
+  background-image: url(./images/2.jpg);
+  background-position: center;
+  background-size: cover;
   position: absolute;
   top: 125px;
   left: 50px;
@@ -225,6 +226,8 @@
   background-color: #fff;
   transform: skew(0deg, 3deg);
   position: relative;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
   height: 100vh;
   min-height: 1500px;
@@ -315,4 +318,51 @@
   margin: 0;
   color: #000;
   height: auto;
+}
+
+.technologies {
+  max-width: 600px;
+  max-height: 100px;
+  margin: 20px 0 0;
+  padding: 20px 49px 0 0;
+  transform: skew(0deg, -3deg);
+  border-radius: 5px;
+}
+
+.technologies__icon-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.technologies__icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies__icon {
+  max-width: 50px;
+  padding: 15px;
+}
+
+.technologies__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.triangle {
+  background-image: url(./images/triangle.svg);
+  min-width: 600px;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 250px;
+  right: -120px;
+  background-position: center;
+  background-size: contain;
+  fill: #000;
 }
